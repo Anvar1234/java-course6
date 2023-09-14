@@ -46,7 +46,7 @@ public class ConsoleView {
 
         //Загоняем ОПН-выражение в калькулятор, который высчитывает ОПН.
         Serviceable expressionService = new ExpressionService(reversePolandNotationConverter);
-        Deque<Double> finalResultArray = expressionService.resultDequeAfterCalculation();
+        Deque<Double> finalResultArray = expressionService.calculatePostfixNotation();
 
         //Выводим результат работы калькулятора.
         System.out.println("Результат:\n" + finalResultArray);

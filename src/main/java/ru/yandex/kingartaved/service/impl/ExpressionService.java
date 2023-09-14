@@ -22,19 +22,12 @@ public class ExpressionService implements Serviceable {
         this.collectionAfterConversation = converterable.convertToPostfix();
     }
 
-    /**
-     * Публичный результирующий метод для получения результата расчета пользовательского выражения.
-     */
-    @Override
-    public Deque<Double> resultDequeAfterCalculation() {
-        return calculatePostfixNotation();
-    } // здесь оставил этот прокладочный метод, нежели в MathExpressionValidator типа АррауАфтерВалидейшн, как правильно?
-
 
     /**
      * Приватный метод для получения результата расчета пользовательского выражения.
      */
-    private Deque<Double> calculatePostfixNotation() { //Обработка постфиксного выражения
+    @Override
+    public Deque<Double> calculatePostfixNotation() { //Обработка постфиксного выражения
 
 //        List<String> validExpressionAfterConversation = collectionAfterConversation;
 
