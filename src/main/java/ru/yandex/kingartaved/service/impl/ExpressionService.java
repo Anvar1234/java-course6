@@ -24,7 +24,7 @@ public class ExpressionService implements Serviceable {
 
 
     /**
-     * Приватный метод для получения результата расчета пользовательского выражения.
+     * Переопределенный метод из интерфейса для получения результата расчета пользовательского выражения.
      */
     @Override
     public Deque<Double> calculatePostfixNotation() { //Обработка постфиксного выражения
