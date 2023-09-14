@@ -26,7 +26,7 @@ public class ExpressionPreparator implements Preparatorable {
      * Метод проверки в пользовательском выражении наличия унарного минуса и его замены.
      */
     @Override
-    public List<String> unaryMinusHandler() { //можно ли сделать переопределенный метод интерфейса приватным при переопределении?
+    public List<String> unaryMinusHandler() {
 
         //получаем чищенное от пробелов выражение из метода этого класса.
         String cleanExpression = clearSpaces();
